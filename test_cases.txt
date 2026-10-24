@@ -1,0 +1,71 @@
+Coin Change Calculator — Test Cases
+=====================================
+
+TC-01: Greedy counterexample
+Input:
+3
+1 3 4
+6
+Expected:
+Minimum number of coins: 2
+Coins used: 3 + 3
+
+TC-02: Exact denomination
+Input:
+3
+1 5 10
+10
+Expected:
+Minimum number of coins: 1
+Coins used: 10
+
+TC-03: Target cannot be formed
+Input:
+2
+2 4
+7
+Expected:
+Target amount cannot be formed.
+
+TC-04: Zero target
+Input:
+3
+1 2 5
+0
+Expected:
+Minimum number of coins: 0
+Coins used: None
+
+TC-05: Repeated use of a denomination
+Input:
+1
+3
+9
+Expected:
+Minimum number of coins: 3
+Coins used: 3 + 3 + 3
+
+TC-06: Invalid denomination
+Input:
+2
+0 4
+7
+Expected:
+Coins must be positive integers.
+
+TC-07: Larger target
+Input:
+3
+1 3 4
+100
+Expected:
+Minimum number of coins: 25
+(A valid optimal combination contains twenty-five 4-value coins.)
+
+TC-08: Negative target
+Input:
+2
+1 2
+-1
+Expected:
+Amount must be a non-negative integer.
